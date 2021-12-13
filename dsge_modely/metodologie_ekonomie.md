@@ -30,5 +30,5 @@ Postkenesiánská ekonomie, podobně jako ta mainstreamová, používá kompliko
 
 ## Zdroje
 
-*   Friedman, Milton: Metodologie pozitivní ekonomie ( [https://libinst.cz/book/friedman-m-1979-metodologie-pozitivni-ekonomie/](https://libinst.cz/book/friedman-m-1979-metodologie-pozitivni-ekonomie/))
+*   Friedman, Milton: Metodologie pozitivní ekonomie ([https://libinst.cz/book/friedman-m-1979-metodologie-pozitivni-ekonomie/](https://libinst.cz/book/friedman-m-1979-metodologie-pozitivni-ekonomie/))
 *   Holman, Robert: Dějiny ekonomického myšlení
