@@ -1,0 +1,7 @@
+{
+  "dsge_modely": [
+    {"file_name": "001_metodologie_ekonomie.md", "title": "Motodologie moderní ekonomie", "slug": "metodologie-moderni-ekonomie"},
+    {"file_name": "002_myslenka_dsge_modelu.md", "title":  "Základní myšlenka DSGE modelů", "slug": "zakladni-myslenka-dsge"},
+    {"file_name": "003_lucasova_kritika.md", "title":  "DSGE modely a Lucasova kritika", "slug": "lucasova-kritika"}
+  ]
+}
