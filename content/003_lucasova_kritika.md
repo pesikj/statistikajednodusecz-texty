@@ -2,7 +2,7 @@ Proč vlastně DSGE modely vznikly a jaké byly jejich hlavní přínosy? Abycho
 
 Lucas svoji kritiku postavil zpočátku na **kritice klasické Phillipsovy křivky**. Připomeňme si, že Phillipsova křivka zobrazuje vztah mezi mzdovou inflací a nezaměstnaností.  Původní křivku sestrojil Phillips tak, že pozoroval historické hodnoty nezaměstnanosti a růstu mezd ve Spojeném království zhruba v období sto let. Hodnoty zanesl na dvourozměrnou souřadnicovou osu. Body tvořily (zhruba) klesající křivku. Nízké hodnoty nezaměstnanosti na této křivce odpovídaly vysokým hodnotám mzdové inflace (a naopak).
 
-![](images/003/Vztah-mezi-inflací-a-nezaměstnaností.png)
+![](media/lucasova-kritika/vztah-mezi-inflaci-a-nezaměstnanosti.png)
 
 *Vztah mezi mzdovou inflací a nezaměstnaností ve Spojeném království za dané období. Zdroj: Phillips, A. W.: The Relation between Unemployment and the Rate of Change of Money Wage Rates in the United Kingdom, 1861-1957*
 
