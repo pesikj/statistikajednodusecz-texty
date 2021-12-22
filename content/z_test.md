@@ -27,7 +27,7 @@ Je zřejmé, že jedna z těchto hypotéz musí platit. Testování hypotézy v�
 
 Tip
 
-Pro větší přehlednost se možné situace často [zapisují do tabulky](https://statistikajednoduse.cz/tabulka-s-chybami-pri-testovani/).
+Pro větší přehlednost se možné situace často [zapisují do tabulky](chyby_pri_testovani.md).
 
 </div>
 
@@ -47,9 +47,7 @@ Na obrázku níže vidíte, jak se mění rozsah oboru přijetí a kritického o
 
 Nyní už zbývá vypočítat skutečnou hodnotu této statistiky a poté rozhodnout o zamítnutí či nezamítnutí nulové hypotézy.
 
-## Výpočet testu v Excelu
-
-Vraťme se k zadání našeho příkladu. Uvažujme, že máme k dispozici 20 měření a testování budeme provádět na hladině významnosti [latex] \alpha = 5 % [/latex]. Soubor s daty a výsledky testu naleznete zde: [z-test-příklad](https://statistikajednoduse.cz/wp-content/uploads/2017/04/z-test-pc599c3adklad1.xlsx "z-test-příklad")
+Vraťme se k zadání našeho příkladu. Uvažujme, že máme k dispozici 20 měření a testování budeme provádět na hladině významnosti [latex] \alpha = 5 % [/latex]. Soubor s daty a výsledky testu naleznete zde: [z-test-data](media/z-test/z-test-data.xlsx).
 
 ## Formulace hypotéz
 
@@ -80,7 +78,7 @@ My však potřebujeme opačnou informaci. Potřebujeme vědět, které číslo [
 
 ![](media/z-test/z-test-krit-val-alpha-0-05.png)
 
-Inverzní funkce právě toto "obrácené čtení" umožňuje. Proto tedy tuto funkci využijeme. Pro dolní hranici kritického oboru zadáme do buňky v Excelu vzorec
+Inverzní funkce právě toto "obrácené čtení" umožňuje. Proto tedy tuto funkci využijeme. Hranice kritického oboru můžeme zjistit například v Excelu. Pro dolní hranici kritického oboru zadáme do buňky v Excelu vzorec
 
 <pre class="wp-block-preformatted">=NORM.INV(0,05/2;0;1)</pre>
 

@@ -24,3 +24,5 @@ Možné případy chyb a správných výsledků se často znázorňují v tabulc
 </table>
 
 Celkem tedy mohou nastat dva případy, přičemž dva znamenají, že výsledek našeho testování je správný, a zbývající, že výsledek testování je chybný.
+
+Pokud vás chyby zajímají více, podívejte se na ukázku toho, [jak vznikají](jak_vznikaji_chyby.md).
