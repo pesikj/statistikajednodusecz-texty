@@ -58,6 +58,11 @@
         "file_name": "t_test_pravostranny.md",
         "title": "Pravostranný t-test",
         "slug": "t-test-pravostranny"
+      },
+      {
+        "file_name": "z_t_test_porovnání.md",
+        "title": "Porovnání z-testu a t-testu",
+        "slug": "z-t-test-porovnani"
       }
     ]
   },
