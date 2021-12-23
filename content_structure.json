@@ -33,6 +33,31 @@
         "file_name": "z_test_excel.md",
         "title": "z-test v Excelu",
         "slug": "z-test-excel"
+      },
+      {
+        "file_name": "z_test_levostranny.md",
+        "title": "Levostranný z-test",
+        "slug": "z-test-levostranny"
+      },
+      {
+        "file_name": "z_test_pravostranny.md",
+        "title": "Pravostranný z-test",
+        "slug": "z-test-pravostranny"
+      },
+      {
+        "file_name": "t_test.md",
+        "title": "t-test",
+        "slug": "t-test"
+      },
+      {
+        "file_name": "t_test_levostranny.md",
+        "title": "Levostranný t-test",
+        "slug": "t-test-levostranny"
+      },
+      {
+        "file_name": "t_test_pravostranny.md",
+        "title": "Pravostranný t-test",
+        "slug": "t-test-pravostranny"
       }
     ]
   },
@@ -49,6 +74,17 @@
         "file_name": "jak_vznikaji_chyby.md",
         "title": "Jak vznikají chyby",
         "slug": "jak-vznikaji-chyby"
+      }
+    ]
+  },
+  {
+    "section_slug": "uvod",
+    "section_title": "Úvod do statistiky",
+    "section_articles": [
+      {
+        "file_name": "rozptyl.md",
+        "title": "Rozptyl",
+        "slug": "rozptyl"
       }
     ]
   }
