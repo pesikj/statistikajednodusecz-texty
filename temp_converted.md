@@ -1,51 +1,66 @@
 
-V předcházejících článcích jsme rozebírali [z-test](https://jiripesik.com/2017/04/02/k-cemu-slouzi-z-test-a-jak-ho-provest-v-excelu/) a [t-test](https://jiripesik.com/2017/06/05/t-test-a-jeho-vyuziti/). Oba testy slouží k otestování hypotézy o střední hodnotě a liší se pouze předpokladem o znalosti rozptylu. Nabízí se ale otázka, k čemu vlastně máme dva testy? **Jakou výhodu vlastně přináší znalost rozptylu?** Na to se nyní podíváme.
+
+Levostranný test na rozptyl
+===========================
 
 
 
 
-Pozn: Průběžně aktualizovaný přehled všech článků o statistických testech najdete [v článku o rozhodovacím stromu pro statistické testy](https://jiripesik.com/2017/02/19/rozhodovaci-strom-pro-statisticke-testy/).
+
+Výpočet ve starších verzích
+---------------------------
+
+
+Starší verze Excelu nabízejí pouze pravostranné varianty funkcí. V případě určení hranice kritického oboru musíme jako hodnotu kvantilu zadat $ 1 - \alpha$:
 
 
 
+```
+=CHIINV(1-D5;D2-1)
+```
 
-U obou dvou testů můžeme testovat hypotézy na stejných hladinách významnosti. Ať už tedy provedeme test pomocí z-testu nebo t-testu, můžeme si předem stanovit, že pravděpodobnost chyby 1. druhu (neoprávněného zamítnutí $ H\_0 $) je například $ \alpha = 5 % $. Neznalost rozptylu se ale projeví **v pravděpodobnosti chyby 2. druhu**, neboli v **síle testu**. V případě využití t-testu máme větší pravděpodobnost, že nezamítneme neplatnou $ H\_0 $.
-
-
-Ukažme si to na příkladu oboustranného testu. Předpokládejme stejné hypotézy jako v předchozích článcích, tj.
-
-
-* $ H\_0: \mu = 190 \, $,
-* $ H\_1: \mu \neq 190 \, $.
-
-
-Vygenerujeme si soubor pomocí generátoru náhodných čísel. Ten nám vygeneruje čísla s požadovanými vlastnostmi. Budeme chtít data se střední hodnotou $ \mu = 190,35 $ a směrodatnou odchylkou $ \sigma = 0,5$. Víme tedy, že nulová hypotéza neplatí. Pokud tedy nulovou hypotézu při testu zamítneme, bude náš výsledek správný. V opačném případě se dopouštíme chyby 2. druhu.
+Při určování p-hodnoty je pak třeba odečíst výslednou hodnotu od jedničky, abychom získali plochu pod hustotou pravděpodobnosti mezi nulou a hodnotou statistiky:
 
 
 
-![t-test-random-gen.PNG](http://statistikajednoduse.cz/wp-content/uploads/2017/06/t-test-random-gen.png)
-Na obrázku níže máte vygenerovaná data a výsledky provedených testů.
+```
+=1-CHIDIST(F8;D2-1)
+```
+
+Výsledek testu
+--------------
+
+
+Oba postupy vedou ke stejnému výsledku, jak je vidět na obrázku níže. Sloupec F pracuje s funkcemi ze starší verze Excelu, sloupce D a E s funkcemi z novější verze.
 
 
 
-![t-test vs z-test](http://statistikajednoduse.cz/wp-content/uploads/2017/06/t-test-vs-z-test.png)
-p-hodnota z-testu je 0,0196, p-hodnota t-testu je 0,1405. Na hladině významnosti $ \alpha = 5 % $ bychom tedy nulovou hypotézu zamítli pouze při použití z-testu. V případě použití t-testu bychom se dopustili chyby 2. druhu.
+![test-rozptyl data a vysledky 2](http://statistikajednoduse.cz/wp-content/uploads/2017/12/test-rozptyl-data-a-vysledky-2.png)
+Soubor se všemi výpočty si můžete stáhnout zde: [test-rozptyl](http://statistikajednoduse.cz/wp-content/uploads/2017/12/test-rozptyl.xlsx "test-rozptyl")
 
 
-Soubor s výpočty si můžete stáhnout [zde](http://statistikajednoduse.cz/wp-content/uploads/2017/06/t-test1.xlsx "t-test").
+Rozdělení testové statistiky
+============================
 
 
-Na základě jednoho příkladu ale nejde vyvozovat nějaké obecnější závěry. Zkusme tedy komplexnější experiment. Využijeme soubor náhodných čísel, který jsme vytvořili pro [analýzu síly testu z-testu](https://jiripesik.com/2017/04/05/jak-vznika-chyba-1-a-2-druhu/).
+Nyní si velmi zjednodušeně vysvětlíme, proč má statistika $ T$ právě $ \chi^2$ rozdělení. Toto rozdělení má jednu důležitou vlastnost. Uvažujme, že máme $ n$ náhodných veličin, které jsou vzájemně nezávislé a které mají normované normální rozdělení. Tyto veličiny si označíme $ U\_1, U\_2,  \dots U\_n$. Jestliže pak máme veličinu, která je součtem druhých mocnin těchto veličin, tj. veličinu $ \chi^2 = \sum\limits\_{i=1}^n U\_i^2$, pak má tato veličina $ \chi^2$ rozdělení a počet stupňů volnosti odpovídá počtu náhodných veličin.
 
 
-V souboru jsme měli náhodné výběry se střední hodnotou od $ \mu =189$ do $ \mu =191$ a směrodatnou odchylkou $ \sigma= 0,9$. Velikostí kroku mezi dvěma středními hodnotami byla 0,025. Rozsah náhodného výběru byl 20 a pro každou střední hodnotu jsme generovali 100 náhodných výběrů. Budeme pro každý soubor testovat hypotézu $ H\_0: \mu = 190$ na hladině významnosti $ \alpha = 5 %$, a to jak pomocí z-testu, tak i pomocí t-testu.
+Rozepišme si nyní vzorec pro statistiku testu $ T$:
 
 
-Výsledek experimentu je na obrázku níže. Obě křivky zobrazují podíl správných výsledků (tj. zamítnutí $ H\_0: \mu = 190$) v souboru provedených testů. Pro z-test je požita zelená barva, pro t-test červená. Červená křivka se nachází pod zelenou, což značí, že z-test je úspěšnější než t-test.
+$ T = \frac{ \left( n - 1 \right) \sum\limits\_{i=1}^n \left( x\_i - \bar{x} \right)^2 }{ \left(n - 1 \right) \sigma\_0^2 } = \frac{ \sum\limits\_{i=1}^n \left( x\_i - \bar{x} \right)^2 }{ \sigma\_0^2 } = \left(\frac{x\_1 - \bar{x}}{ \sigma\_0} \right)^2 + \left(\frac{x\_2 - \bar{x}}{ \sigma\_0 } \right)^2 + \dots + \left( \frac{x\_n - \bar{x}}{ \sigma\_0 } \right)^2\, .$
 
 
+Uvažujme nyní libovolný $ i$-tý výraz $ \frac{x\_i - \bar{x}}{ \sigma\_0 }$. Náhodná veličina $ x\_i$ má normální rozdělení, což je dáno předpokladem testu. Průměr náhodného výběru $ \bar{x}$ je nestranným odhadem střední hodnoty rozdělení. Platí-li nulová hypotéza $ H\_0$, pak má náhodná veličina $ x\_i$ rozptyl $ \sigma\_0^2$ a tedy směrodatnou odchylku $ \sigma\_0$.
 
-![z-test vs t-test test power](http://statistikajednoduse.cz/wp-content/uploads/2017/06/z-test-vs-t-test-test-power1.png)
-Soubor s experimenty si můžete stáhnout [zde](http://statistikajednoduse.cz/wp-content/uploads/2017/06/z-test-vs-t-test.xlsx "z-test vs t-test").
+
+Obecně platí, že máme-li náhodnou veličinu s normálním rozdělením $ X$, můžeme ji snadno převést na veličinu s normovaným normálním rozdělením $ U$ tím, že od ní odečteme její střední hodnotu $ \mu$ a výsledek vydělíme směrodatnou odchylkou $ \sigma$, tj. provedeme operaci
+
+
+$ U = \frac{X-\mu}{\sigma} \, .$
+
+
+Platí-li tedy nulová hypotéza $ H\_0$, pak je statistika $ T$ součtem druhých mocnin veličin s normovaným normálním rozdělením a tím pádem vyhovuje základní vlastnosti $ \chi^2$ rozdělení. Je rovněž zřejmé, proč u tohoto testu formulujeme předpoklad normality.
 
 

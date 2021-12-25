@@ -5,7 +5,7 @@
     "section_articles": [
       {
         "file_name": "metodologie_ekonomie.md",
-        "title": "Motodologie moderní ekonomie",
+        "title": "Metodologie moderní ekonomie",
         "slug": "metodologie-moderni-ekonomie"
       },
       {
@@ -60,9 +60,19 @@
         "slug": "t-test-pravostranny"
       },
       {
-        "file_name": "z_t_test_porovnání.md",
+        "file_name": "z_t_test_porovnani.md",
         "title": "Porovnání z-testu a t-testu",
         "slug": "z-t-test-porovnani"
+      },
+      {
+        "file_name": "chi_kvadrat_test_rozptyl_pravostranny.md",
+        "title": "Jednovýběrový test na rozptyl",
+        "slug": "chi-kvadrat-test-rozptyl"
+      },
+      {
+        "file_name": "chi_kvadrat_test_rozptyl_levostranny.md",
+        "title": "Levostranný jednovýběrový test na rozptyl",
+        "slug": "chi-kvadrat-test-rozptyl-levostranny"
       }
     ]
   },
