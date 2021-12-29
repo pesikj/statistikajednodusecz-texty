@@ -93,6 +93,47 @@
     ]
   },
   {
+    "section_slug": "dvouvyberove-testy",
+    "section_title": "Dvouvýběrové testy",
+    "section_articles": [
+      {
+        "file_name": "dvouvyberovy_test_vyber.md",
+        "title": "Výběr dvouvýběrového testu",
+        "slug": "vyber-dvouvyberoveho-testu"
+      },
+      {
+        "file_name": "t_test_parovy.md",
+        "title": "Párový t-test",
+        "slug": "t-test-parovy"
+      },
+      {
+        "file_name": "t_test_parovy_pravostranny.md",
+        "title": "Párový provostranný t-test",
+        "slug": "t-test-parovy-pravostranny"
+      },
+      {
+        "file_name": "t_test_parovy_oboustranny.md",
+        "title": "Párový oboustranný t-test",
+        "slug": "t-test-parovy-oboustranny"
+      },
+      {
+        "file_name": "t_test_dvouvyberovy.md",
+        "title": "Dvouvýběrový t-test",
+        "slug": "t-test-dvouvyberovy"
+      },
+      {
+        "file_name": "t_test_dvouvyberovy_pravostranny.md",
+        "title": "Dvouvýběrový pravostranný t-test",
+        "slug": "t-test-dvouvyberovy-pravostranny"
+      },
+      {
+        "file_name": "t_test_dvouvyberovy_oboustranny.md",
+        "title": "Dvouvýběrový oboustranný t-test",
+        "slug": "t-test-dvouvyberovy-oboustranny"
+      }
+    ]
+  },
+  {
     "section_slug": "uvod",
     "section_title": "Úvod do statistiky",
     "section_articles": [
@@ -100,6 +141,17 @@
         "file_name": "rozptyl.md",
         "title": "Rozptyl",
         "slug": "rozptyl"
+      }
+    ]
+  },
+  {
+    "section_slug": "pokrocila-temata",
+    "section_title": "Pokročilá témata",
+    "section_articles": [
+      {
+        "file_name": "rozptyl_podruhe.md",
+        "title": "Rozptyl podruhé",
+        "slug": "rozptyl-podruhe"
       }
     ]
   }
