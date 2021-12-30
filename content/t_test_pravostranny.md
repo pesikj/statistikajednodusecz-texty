@@ -1,13 +1,17 @@
-Při pravostranném testu se rozhodujeme mezi těmito hypotézami:
+Podobně jako u [z-testu](z_test.md) můžeme i u [t-testu](t_test.md) pracovat s pravostrannou variantou testu, kdy formulujeme alternativní hypotézu jako se znaménkem "menší než".
 
-* $latex H\_0: \mu = 190 \, \mathrm{mm}$.
-* $latex H\_0: \mu > 190 \, \mathrm{mm}$.
+Zadání příkladu by bylo obdobou zadání u [z-testu](z_test_pravostranny.md) s tím rozdílem, že zde neznáme směrodatnou odchylku dat a musíme ji odhadovat. Při pravostranném testu se rozhodujeme mezi těmito hypotézami:
+
+* Nulová hypotéza: Středné hodnota souboru je 190 mm. ($latex H_0: \mu = 190 \, \mathrm{mm}$)
+* Alternativní hypotéza: Střední hodnota souboru je větší než 190 mm. ($latex H_0: \mu > 190 \, \mathrm{mm}$)
+
+## Výpočet v Excelu
 
 Soubor s daty i výpočty si můžete stáhnout [zde](media/t-test/t-test.xlsx).
 
 Kritický obor nyní "odsekáváme" zprava, tj. kritický obor vyjádřený intervalem má tvar
 
-$latex W = \langle t\_{\alpha} \left( n - 1 \right), \infty )  \, .$
+$ W = \langle t_{\alpha} \left( n - 1 \right), \infty )  \, .$
 
 Výpočet statistiky a výběrové směrodatné odchylky zůstává stejný, určíme tedy pouze pouze hranice kritického oboru a p-hodnotu.
 

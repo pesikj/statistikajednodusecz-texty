@@ -1,25 +1,23 @@
-U [oboustranného z-testu](z-test.md) byla alternativní hypotéza zadaná nerovností, tj. alternativní hypotéza tvrdila, že střední hodnota náhodného výběru je *odlišná* od teoretické (testované) střední hodnoty. Nyní rozebereme další variantu - levostranný test.
+Uvažujme, že chceme ověřit hypotézu o střední hodnotě nějakého náhodného výběru, k čemuž můžeme využít z-test. U [oboustranného z-testu](z-test.md) je alternativní hypotéza zadaná nerovností, tj. alternativní hypotéza tvrdila, že střední hodnota náhodného výběru je *odlišná* od teoretické (testované) střední hodnoty. Nyní rozebereme další variantu - levostranný test, kde ověřujeme, zda je skutečná střední hodnota dat **menší** než hypotetická hodnota.
 
-Uvažujme upravené zadání našeho příkladu: *Máme zařízení, které vyrábí součástku určité délky. Směrodatná odchylka délky součástek v důsledku chybovosti zařízení je 0,9 mm a odchylky mají normální rozdělení. Požadovaná délka součástky je 190 mm. Pracovník nemůže zadat k výrobě delší součástku, v důsledku chybného zadání ale mohou být vyráběny kratší součástky. Ověřte, zda bylo zařízení správně nastaveno.*
+Uvažujme upravené zadání našeho příkladu: *Máme zařízení, které vyrábí součástku určité délky. Směrodatná odchylka délky součástek v důsledku chybovosti zařízení je 0,9 mm. Požadovaná délka součástky je 190 mm. Pracovník nemůže zadat k výrobě delší součástku, v důsledku chybného zadání ale mohou být vyráběny kratší součástky. Ověřte, zda bylo zařízení správně nastaveno.*
 
 V tomto příkladu uvažujeme, že průměrná délka součástky může být menší než 190 mm, neuvažujeme ale, že by mohla být větší. Formulujme tedy hypotézy:
 
-* Střední hodnota statistického souboru je 190 mm. ($ H\_0: \mu = 190 \, \mathrm{mm} $)
-* Střední hodnota statistického souboru je menší než 190 mm. ($ H\_1: \mu < 190 \, \mathrm{mm} $.)
-
-Nulová hypotéza zůstává stejná, alternativní hypotéza ale obsahuje znaménko menší než. Tuto variantu testu označujeme jako **levostranný test**.
+* Střední hodnota statistického souboru je 190 mm. ($ H_0: \mu = 190 \, \mathrm{mm} $)
+* Střední hodnota statistického souboru je menší než 190 mm. ($ H_1: \mu < 190 \, \mathrm{mm} $.)
 
 Statistika zůstává stejná:
 
-$ Z = \frac{\bar{x} - \mu\_0}{\sigma} \sqrt{n} \, ,$
+$ Z = \frac{\bar{x} - \mu_0}{\sigma} \sqrt{n} \, ,$
 
-přičemž $ \bar{x}$ je průměr našeho vzorku, $ \mu\_0$ je teoretická (testovaná) střední hodnota, $ \sigma$ je směrodatná odchylka základního souboru a $ n$ je rozsah náhodného výběru. Statistika má opět normované normální rozdělení.
+přičemž $ \bar{x}$ je průměr našeho vzorku, $ \mu_0$ je teoretická (testovaná) střední hodnota, $ \sigma$ je směrodatná odchylka základního souboru a $ n$ je rozsah náhodného výběru. Statistika má opět normované normální rozdělení.
 
-###  Kam umístit kritický obor
+##  Kam umístit kritický obor
 
-Naše alternativní hypotéza [latex] H\_1 [/latex] tvrdí, že skutečná střední hodnota je menší než 190 mm. Jestliže [latex] H\_1 [/latex] platí, pak bude s větší pravděpodobností průměr vzorku menší než 190. Nižší hodnota $ \bar{x}$ než 190 znamená, že rozdíl $ \bar{x} - \mu\_0$ je záporný. Protože $ \sigma$ a $ n$ jsou vždy kladné, záporná hodnota tohoto rozdílu znamená, že i hodnota statistiky je záporná. Z toho plyne, že záporné hodnoty statistiky hovoří spíše ve prospěch alternativní hypotézy. **Čím je hodnota statistiky menší, tím větší tendenci máme k zamítnutí nulové hypotézy.**
+Naše alternativní hypotéza [latex] H_1 [/latex] tvrdí, že skutečná střední hodnota je menší než 190 mm. Jestliže [latex] H_1 [/latex] platí, pak bude s větší pravděpodobností průměr vzorku menší než 190. Nižší hodnota $ \bar{x}$ než 190 znamená, že rozdíl $ \bar{x} - \mu_0$ je záporný. Protože $ \sigma$ a $ n$ jsou vždy kladné, záporná hodnota tohoto rozdílu znamená, že i hodnota statistiky je záporná. Z toho plyne, že záporné hodnoty statistiky hovoří spíše ve prospěch alternativní hypotézy. **Čím je hodnota statistiky menší, tím větší tendenci máme k zamítnutí nulové hypotézy.**
 
-### Hladina významnosti a možné závěry
+## Hladina významnosti a možné závěry
 
 Kritické obory pro hladinu významnosti $ \alpha = 5 %$, $ \alpha = 1 % $ a $ \alpha = 10 % $ naleznete na obrázku níže.
 
@@ -27,12 +25,8 @@ Kritické obory pro hladinu významnosti $ \alpha = 5 %$, $ \alpha = 1 % $ a $ \
 
 Je důležité si uvědomit, že plocha kritického oboru je stále [latex] 0{,}05 [/latex]. To způsobuje hranice kritického oboru (kritická hodnota) pro stejnou hladinu významnosti je "více vpravo" oproti kritickému oboru oboustranného testu (porovnejte si to s kritickými obory u [oboustranného z-testu](z-test.md)).
 
-Naše testování můžeme ukončit dvěma závěry:
 
-* Zamítneme $ H\_0$ a na dané hladině významnosti prohlásíme, že střední hodnota délky součástky je nižší než 190 mm, tj. zařízení bylo nastaveno chybně. Jinak řečeno, přijímáme alternativní hypotézu.
-* Nezamítáme $ H\_0$ na dané hladině významnosti, tj. nepodařilo se nám prokázat, že by délka součástky byla nižší než 190 mm.
-
-### Výpočet z-testu v Excelu
+## Výpočet z-testu v Excelu
 
 Podívejme se nyní, jak by se z-test provedl v aplikaci Microsoft Excel. Testovat budeme na $ \alpha = 5 %$. Využijeme list, který jsme použili pro oboustranný test, provedeme pouze několik modifikací.
 
@@ -47,16 +41,18 @@ Máme pouze jednu hranici kritického oboru, která je daná vzorcem
 
 Kritický obor vyjádřený intervalem má tvar:
 
-$ W = u\_{0,05} = ( - \infty, -1,6449 \rangle \, , $
+$ W = u_{0,05} = ( - \infty, -1,6449 \rangle \, , $
 
 
-kde $ u\_{0,05} $ označujeme pětiprocentní kvantil normovaného normálního rozdělení. Dále upravíme vzorec pro výpočet p-hodnoty
+kde $ u_{0,05} $ označujeme pětiprocentní kvantil normovaného normálního rozdělení. 
+
+Dále upravíme vzorec pro výpočet p-hodnoty
 
 ```
 =NORM.S.DIST(D9;PRAVDA)
 ```
 
-Hodnota statistiky je -2,0020, tj. statistika leží v kritickém oboru. V tomto případě tedy můžeme konstatovat, že jsme na hladině významnosti $ \alpha = 5 %$ prokázali, že střední hodnota délky součástky je menší než 190. Zařízení tedy bylo nastaveno chybně.
+Hodnota statistiky je -2,0020, tj. statistika leží v kritickém oboru. V tomto případě tedy můžeme konstatovat, že jsme na hladině významnosti $ \alpha = 5 % $ prokázali, že střední hodnota délky součástky je menší než 190. Zařízení tedy bylo nastaveno chybně.
 
 Výsledek potvrzuje i p-hodnota, která je nižší než hladina významnosti. Porovnání je na obrázku níže. p-hodnota je plocha pod hustotou statistiky od minus nekonečna až po vypočtenou hodnotu statistiky.
 

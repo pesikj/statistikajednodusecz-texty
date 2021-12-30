@@ -35,6 +35,11 @@
         "slug": "z-test-excel"
       },
       {
+        "file_name": "z_test_funkce.md",
+        "title": "Funkce Z.TEST v Excelu",
+        "slug": "z-test-excel-funkce"
+      },
+      {
         "file_name": "z_test_levostranny.md",
         "title": "Levostranný z-test",
         "slug": "z-test-levostranny"
