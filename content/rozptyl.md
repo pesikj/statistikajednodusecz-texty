@@ -15,12 +15,12 @@ Tuto nevýhodu částečně odstraňuje **kvartilové rozpětí**. Jedná se o r
 ![](media/rozptyl/variancni_rozpeti_2.png)
 
 Základním ukazatelem variability je však **rozptyl**, který obvykle značíme $ \sigma^2$. Obecně je rozptyl náhodné veličiny $ X$ definovaný vztahem
-$ \sigma^2\_X = \mathbb{E} \left( \left[ X - \mathbb{E} \left(X \right) \right]^2 \right) \, ,$
+$ \sigma^2_X = \mathbb{E} \left( \left[ X - \mathbb{E} \left(X \right) \right]^2 \right) \, ,$
 
 tj. jako střední hodnota rozdílu mezi hodnotami veličiny $ X$ a její střední hodnotou umocněného na druhou.
 
 Máme-li k dispozici **všechny hodnoty náhodného souboru**, vypočteme rozptyl pomocí vzorce
-$ \sigma^2\_X = \frac{1}{n} \sum\limits\_{i=1}^{n} \left[ x\_i - \mathbb{E} \left(X \right) \right]^2 \, .$
+$ \sigma^2_X = \frac{1}{n} \sum\limits_{i=1}^{n} \left[ x_i - \mathbb{E} \left(X \right) \right]^2 \, .$
 
 Chceme-li určit rozptyl náhodného souboru, vypočteme **rozdíl mezi každou hodnotou náhodného souboru a průměrem souboru a ten umocníme na druhou**. Rozptyl je pak součet všech těchto hodnot.
 
@@ -33,10 +33,10 @@ Vyjádřeme si hodnotu rozptylu graficky. Rozdíl mezi *i*-tou hodnotou a prům�
 Rozptyl využívá všechny hodnoty náhodného souboru, což, jak již víme, lze považovat za výhodu i nevýhodu. Obecně se ale rozptyl považuje za nejoblíbenější ukazatel variability a je ve statistice hojně používán. Často třeba určujeme hodnoty parametrů statistických modelů tak, abychom minimalizovali rozptyl našich dat. To souvisí i s tím, že druhou mocninu lze snadno derivovat.
 
 Kromě rozptylu často používáme směrodatnou odchylku, která je odmocninou rozptylu. Směrodatná odchylka se často značí $ \sigma$ a platí tedy vztah
-$ \sigma\_X = \sqrt{\sigma^2\_X} = \sqrt{\frac{1}{n} \sum\limits\_{i=1}^{n} \left[ x\_i - \mathbb{E} \left(X \right) \right]^2} \, .$
+$ \sigma_X = \sqrt{\sigma^2_X} = \sqrt{\frac{1}{n} \sum\limits_{i=1}^{n} \left[ x_i - \mathbb{E} \left(X \right) \right]^2} \, .$
 
 Pokud **nemáme k dispozici všechny hodnoty souboru**, ale pouze nějaký omezený náhodný výběr, musíme hodnotu rozptylu odhadnout. K odhadu rozptylu se používá **výběrový rozptyl**, který značíme $ s^2$ a vypočteme ho pomocí vzorce:
-$ s^2\_X = \frac{1}{n-1} \sum\limits\_{i=1}^{n} \left( x\_i - \bar{x} \right)^2 \, .$
+$ s^2_X = \frac{1}{n-1} \sum\limits_{i=1}^{n} \left( x_i - \bar{x} \right)^2 \, .$
 
 Rozdíl oproti předchozímu vzorci je v tom, že sumu násobíme zlomkem $ \frac{1}{n-1}$ namísto $ \frac{1}{n}$. Proč volíme tento vzorec? Výběrový rozdíl má totiž důležitou vlastnost v tom, že je **nestranným odhadem** rozptylu základního souboru. Nestranností odhadu rozumíme to, že **střední hodnota odhadu se rovná skutečné hodnotě odhadovaného souboru**. Odhad, který není nestranný, je tedy nějakým způsobem **zkreslený**.
 
@@ -69,6 +69,6 @@ Rozdíl mezi oběma vzorci je vidět na obrázku níže. Vidíme, jak pro se ros
 ![vyberovy-populacni-rozptyl](media/rozptyl/vyberovy-populacni-rozptyl.png)
 
 Ještě malý dodatek. Víme, že limita
-$ \lim\_{n\to\infty} \frac{n}{n-1} = 1 \, . $
+$ \lim_{n\to\infty} \frac{n}{n-1} = 1 \, . $
 
 Odhady rozptylu pomocí vzorce pro populační rozptyl je takzvaným **asymptoticky nestranným odhadem**, protože pro rostoucí $ n $ konverguje střední hodnota odhadu ke skutečné hodnotě rozptylu.

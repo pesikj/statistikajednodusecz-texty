@@ -2,8 +2,8 @@ V článku si vysvětlíme, jak bychom provedli levostranný test, tentokrát ji
 
 V případě levostranného testu budeme mít následující hypotézy:
 
-* Nulová hypotéza: Rozptyl je 0,64. ($ H\_0: \sigma^2 = 0{,}64 $)
-* Alternativní hypotéza: Rozptyl je menší než 0,64. ($ H\_1: \sigma^2 < 0{,}64 $)
+* Nulová hypotéza: Rozptyl je 0,64. ($ H_0: \sigma^2 = 0{,}64 $)
+* Alternativní hypotéza: Rozptyl je menší než 0,64. ($ H_1: \sigma^2 < 0{,}64 $)
 
 Soubor s daty a výpočty naleznete [zde](media/chi-kvadrat-test-rozptyl-levostranny/test-rozptyl.xlsx)
 
