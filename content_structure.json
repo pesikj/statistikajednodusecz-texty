@@ -135,6 +135,21 @@
         "file_name": "t_test_dvouvyberovy_oboustranny.md",
         "title": "Dvouvýběrový oboustranný t-test",
         "slug": "t-test-dvouvyberovy-oboustranny"
+      },
+      {
+        "file_name": "welchuv_test.md",
+        "title": "Welchův t-test",
+        "slug": "welchuv-test-dvouvyberovy"
+      },
+      {
+        "file_name": "welchuv_test_pravostranny.md",
+        "title": "Welchův pravostranný t-test",
+        "slug": "welchuv-test-pravostranny"
+      },
+      {
+        "file_name": "welchuv_test_oboustranny.md",
+        "title": "Welchův oboustranný t-test",
+        "slug": "welchuv-test-oboustranny"
       }
     ]
   },
